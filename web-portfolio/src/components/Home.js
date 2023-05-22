@@ -4,38 +4,13 @@ import React, { useState } from 'react';
 function Home() {
 
     return (
-             <h1>
-                 Hello World adsssssssssssssssssssssssssssssfavdas
-                  adsssssssssssssssssssssssssssssssssssssssssssssss
-                 adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-        adsssssssssssssssssssssssssssssssssssssssssssssss
-      </h1>
-      );
+        <>
+            <p>Hi, My Name is Liam Crowe</p>
+            <h1>About Me</h1>
+            <h1>Featured Projects</h1>
+        </>
+    
+    );
   }
   
   export default Home;
