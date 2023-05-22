@@ -1,0 +1,95 @@
+#navbarName {
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, 	#FF00FF, #0096FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+    background-image: linear-gradient(to right, 	#FF00FF, #0096FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-image: linear-gradient(to right, #FF00FF, #0096FF);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i{
+    background-image: linear-gradient(to right, 	#FF00FF, #0096FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+}
+
+@media screen and (max-width:769px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 65px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.6); 
+        padding: 40px 0 0 10px;
+    } 
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i{
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
