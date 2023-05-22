@@ -30,6 +30,7 @@ nav {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
+    color: black;
     transition: 0.3s ease-in-out;
 }
 
@@ -74,6 +75,7 @@ nav {
         background-color: rgb(255, 255, 255);
         box-shadow: 0 5px 15px rgba(0,0,0,0.6); 
         padding: 40px 0 0 10px;
+        overflow-x: hidden;
     } 
 
     #navbar.active{

@@ -1,0 +1,7 @@
+
+@media screen and (max-width:769px) {
+  h1 {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
