@@ -1,3 +1,103 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro p{
+  padding: 20px 80px;
+  font-family: Verdana;
+  font-size: 50px;
+}
+
+.rotated-square {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transform: rotate(35deg);
+}
+
+.square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 90px;
+  background: linear-gradient(45deg, #FF00FF, #0096FF);
+  z-index: 5px;
+}
+
+.about-heading {
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.left-line {
+  border: none;
+  height: 5px;
+  width: 100px; /* Adjust the width as needed */
+  margin-right: 10px; /* Adjust the margin as needed */
+  background: linear-gradient(to right, #FF00FF, #0096FF); /* Gradient from left to right */
+}
+
+.right-line {
+  border: none;
+  height: 5px;
+  width: 100px; /* Adjust the width as needed */
+  margin-left: 10px; /* Adjust the margin as needed */
+  background: linear-gradient(to right, #FF00FF, #0096FF); /* Gradient from left to right */
+}
+
+/*Code below is for the cards in the featured projects*/
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 @media screen and (max-width:769px) {
   h1 {

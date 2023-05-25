@@ -35,7 +35,7 @@ nav {
 }
 
 #navbar li a:hover {
-    background-image: linear-gradient(to right, 	#FF00FF, #0096FF);
+    background-image: linear-gradient(to right, #FF00FF, #0096FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
