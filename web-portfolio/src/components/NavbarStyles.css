@@ -11,7 +11,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: rgb(255, 255, 255);
+    background-color: #f2f2f2;;
 }
 
 #navbar {
@@ -55,7 +55,7 @@ nav {
 }
 
 #mobile i{
-    background-image: linear-gradient(to right, 	#FF00FF, #0096FF);
+    background-image: linear-gradient(to right, #FF00FF, #0096FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     align-items: center;
@@ -72,7 +72,7 @@ nav {
         right: -300px;
         width: 300px;
         height: 100vh;
-        background-color: rgb(255, 255, 255);
+        background-color: #f2f2f2;
         box-shadow: 0 5px 15px rgba(0,0,0,0.6); 
         padding: 40px 0 0 10px;
         overflow-x: hidden;

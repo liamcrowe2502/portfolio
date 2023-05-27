@@ -1,0 +1,90 @@
+.footer {
+    background-color: #f2f2f2;
+    padding: 40px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    margin-right: 50px;
+  }
+
+  .footer-links a:hover {
+    text-decoration: none;
+    background: linear-gradient(to right, #FF00FF, #0096FF);
+    margin-right: 50px;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-icons i {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #FF00FF, #0096FF);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+  }
+
+  footer p {
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  @media screen and (max-width: 769px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Add this line */
+    }
+  
+    .footer-links {
+      margin-bottom: 10px;
+      display: flex; /* Add this line */
+      justify-content: center; /* Add this line */
+    }
+  
+    .footer-links a {
+      margin-right: 20px; /* Adjust this margin as needed */
+    }
+
+    .footer-links a:hover {
+        margin-right: 20px; /* Adjust this margin as needed */
+      }
+  
+    .footer-icons {
+      flex-direction: row;
+      margin-top: 20px;
+      justify-content: center;
+      cursor: pointer; /* Add this line */
+    }
+  
+    .footer-icons i {
+      margin-right: 10px;
+    }
+
+    footer p {
+        margin-top: 50px;
+        margin-right: 20px;
+      }
+  }
+  

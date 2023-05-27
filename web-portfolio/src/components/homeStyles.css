@@ -55,11 +55,16 @@
 }
 
 /*Code below is for the cards in the featured projects*/
+.card-container {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+}
+
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 300px;
-  margin: 20px;
+  margin: 50px;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
