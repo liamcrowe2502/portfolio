@@ -1,0 +1,68 @@
+.myself {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Adjust the justify-content value to flex-start */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .myself p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(45deg, #ff1e56, #b800e6);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    max-width: 600px;
+    margin-right: 20px;
+    margin-left: 300px; /* Adjust the margin-left value to move it slightly to the left */
+  }
+  
+  
+  .myself p:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-heading {
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .bouncy-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bouncy {
+    font-size: 5rem;
+    color: #333;
+  }
+  
+  .bouncy .middle {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .bouncing {
+    animation: rubberband 800ms alternate ease-out;
+  }
+  
+  @keyframes rubberband {
+    0% { transform: scaleX(1) scaleY(1); }
+    40% { transform: scaleX(1.12) scaleY(0.75); }
+    55% { transform: scaleX(0.85) scaleY(1); }
+    65% { transform: scaleX(1.09) scaleY(0.85); }
+    75% { transform: scaleX(0.9) scaleY(1); }
+    90% { transform: scaleX(1.05) scaleY(0.95); }
+    100% { transform: scaleX(1) scaleY(1); }
+  }
+  

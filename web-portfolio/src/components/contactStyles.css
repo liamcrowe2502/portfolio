@@ -1,0 +1,155 @@
+/* Added styles for centering the contact information */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+h1 {
+  text-decoration: none;
+}
+
+.left-half {
+  /* Set the background color for the left half of the screen */
+  background: linear-gradient(to right, #FF00FF, #0096FF);
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.how-to-contact-me {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+/* Additional styles for the paragraph inside .how-to-contact-me */
+.how-to-contact-me p {
+  font-size: 20px; /* Example font size, you can adjust it as needed */
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: 'Raleway';
+  color: #333; /* Example text color, you can adjust it as needed */
+}
+
+.right-half {
+  /* Set the background color for the right half of the screen */
+  background-color: #ffffff;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50%; /* Adjust this value to move the content to the left of the screen */
+}
+
+.bouncy-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bouncy-container .bouncy {
+  font-size: 5rem;
+  color: #333;
+}
+
+.bouncing {
+  animation: rubberband 800ms alternate ease-out;
+}
+
+@keyframes rubberband {
+  0% { transform: scaleX(1) scaleY(1); }
+  40% { transform: scaleX(1.12) scaleY(0.75); }
+  55% { transform: scaleX(0.85) scaleY(1); }
+  65% { transform: scaleX(1.09) scaleY(0.85); }
+  75% { transform: scaleX(0.9) scaleY(1); }
+  90% { transform: scaleX(1.05) scaleY(0.95); }
+  100% { transform: scaleX(1) scaleY(1); }
+}
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info {
+    padding: 100px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .row input {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+
+.subjectTextArea {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Add a margin-right to create space between the name and email input fields */
+  .row input:first-child {
+    margin-right: 10px;
+  }
+  
+ textarea {
+  flex: 1;
+  width: 500px; /* Set the width to 100% to take up the full width of its container */
+  height: 200px; /* Adjust the height as needed */
+  margin-top: 20px; /* Adjust the padding as needed */
+  border: 2px solid #ccc;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: auto; /* Move the button to the right */
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+  
+@media (max-width: 768px) {
+  h1 {
+    text-decoration: none;
+  }
+  }

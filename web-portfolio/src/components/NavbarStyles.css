@@ -11,7 +11,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: #f2f2f2;;
+    background-color: #f2f2f2;
 }
 
 #navbar {
@@ -30,7 +30,7 @@ nav {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color: black;
+    color: #333;
     transition: 0.3s ease-in-out;
 }
 
@@ -76,6 +76,7 @@ nav {
         box-shadow: 0 5px 15px rgba(0,0,0,0.6); 
         padding: 40px 0 0 10px;
         overflow-x: hidden;
+        z-index: 2;
     } 
 
     #navbar.active{
