@@ -1,75 +1,73 @@
 .home_banner_area {
-  position: relative;
-  z-index: -1;
-  background-image: linear-gradient(0deg, #FF00FF 0%, #0096FF 100%);
-  margin-bottom: 200px;
-  margin-top: 0; /* Remove margin from the top */
-  padding-top: 100px; /* Add padding to push content down */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  background: linear-gradient(to bottom, #FF00FF, #0096FF);
 }
 
 .cards-container-above {
   display: flex;
-  justify-content: space-between;
-  width: 80%;
-  background-color: #f4f4f4;
-  margin: 0 auto; /* Remove margin from the top and maintain horizontal centering */
-  position: relative; /* Add relative positioning to keep it within the section */
-  top: -50px; /* Adjust this value to control the vertical position of the cards */
-}
-
-.card-image-txt1 {
-  flex: 1;
-  background-color: #f4f4f4;
-  box-shadow: 20px 10px 20px #efefef33;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-.card-image-txt2,
-.card-image-txt3 {
-  height: 50%; /* Set the height to 50% of card-image-txt1 */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card-image-above {
-  width: 100%;
-  height: auto;
-  margin-right: 0;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.card-image-above img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.card-content-above {
-  font-family: Verdana;
-  font-size: 1.2rem;
-}
-
-.quote {
-  font-family: Verdana;
-  font-size: 1.2rem;
+  gap: 20px; /* Adjust the gap as needed */
+  max-width: 100%; /* Ensure the cards container doesn't exceed the section width */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  height: 600px;
+  background-color: #ccc;
 }
 
-.social-icons {
+.cards {
+  flex: 1;
+  max-width: 50%; /* Each card takes up 50% of the container width */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 500px;
+  margin: 50px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cards-spelling-info {
+  flex: 1;
+  max-width: 50%; /* Each card takes up 50% of the container width */
+  border-radius: 8px;
+  width: 500px;
+  height: 100px;
+  margin: 50px;
+  padding: 10px;
+  /*border: 1px solid #ccc; */
+}
+
+.cards-brief-info {
+  flex: 1;
+  max-width: 50%; /* Each card takes up 50% of the container width */
+  border-radius: 8px;
+  width: 1000px;
+  height: 100px;
+  margin: 50px;
+  padding: 10px;
+
+}
+
+.card-image {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  /* Add any other container styling as needed */
 }
 
-.social-icons i {
-  color: #333;
-  margin-right: 10px;
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Maintain aspect ratio while fitting inside the container */
+  /* Add other image styling as needed */
+}
+.card-content-info p {
   font-size: 24px;
+  font-family: Verdana;
+  font-weight: bold;
+  text-align: left;
 }
-
 
 .myself {
   display: flex;

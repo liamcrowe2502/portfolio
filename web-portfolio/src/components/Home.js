@@ -24,33 +24,34 @@ function Home() {
 
   return (
     <>
-<section className="home_banner_area">
-  <div className="cards-container-above">
-    <div className="card-image-txt1">
-      <div className="card-image-above">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="Profile"/>
+<section class="home_banner_area">
+  <div class="cards-container-above">
+    <div class="cards">
+      <div class="card-image">
+        <img src="https://media.licdn.com/dms/image/C4D03AQGpjMz1V0fEfw/profile-displayphoto-shrink_800_800/0/1602671238550?e=2147483647&v=beta&t=5SrRf8Stm4JXpy-YuoafSrip5OX6JENUFxu3WdXsW2w" alt="Profile" />
       </div>
     </div>
-    <div className="card-image-txt2">
-      <div className="card-content-above">
+    <div class="information">
+       <div class="cards-spelling-info">
+      <div class="card-content-info">
         <p dangerouslySetInnerHTML={{ __html: displayedText }}></p>
       </div>
     </div>
-    <div className="card-image-txt3">
-      <div className="card-content-above">
-        <div className="quote">
-          <p>“My mama always said life was like a box of chocolates. You never know what you're gonna get.” - Forrest Gump, 1994</p>
-          <div className="social-icons">
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-linkedin"></i>
-            <i className="fab fa-github"></i>
-            <i className="fab fa-twitch"></i>
-          </div>
-        </div>
+
+    <div class="cards-brief-info">
+      <div class="card-content-info">
+        <p> "Which Would Be Worse: To Live As A Monster, Or To Die As A Good Man?" - Teddy Daniels</p>
+        <i className="fab fa-instagram"></i> {/* Instagram icon */}
+        <i className="fab fa-linkedin"></i> {/* LinkedIn icon */}
+        <i className="fab fa-github"></i> {/* GitHub icon */}
+        <i className="fab fa-twitch"></i> {/* Twitch icon */}
       </div>
     </div>
+    </div>
+   
   </div>
 </section>
+
 
 
 
