@@ -1,40 +1,4 @@
-.myself {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Adjust the justify-content value to flex-start */
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  
-  .myself p {
-    font-family: 'Verdana', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    color: #fff;
-    background: linear-gradient(45deg, #ff1e56, #b800e6);
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transform: scale(1);
-    transition: transform 0.3s ease;
-    max-width: 600px;
-    margin-right: 20px;
-    margin-left: 300px; /* Adjust the margin-left value to move it slightly to the left */
-  }
-  
-  
-  .myself p:hover {
-    transform: scale(1.05);
-  }
-  
-  .about-heading {
-    display: flex;
-    font-size: 50px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
   .bouncy-container {
     display: flex;
@@ -45,12 +9,7 @@
     font-size: 5rem;
     color: #333;
   }
-  
-  .bouncy .middle {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
+
   
   .bouncing {
     animation: rubberband 800ms alternate ease-out;
@@ -65,4 +24,134 @@
     90% { transform: scaleX(1.05) scaleY(0.95); }
     100% { transform: scaleX(1) scaleY(1); }
   }
+
+  .card-about {
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px black;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    background-color: #498afb;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em; 
+  }
+
+  .profile-img {
+    border-radius: 50%;
+    width:125px;
+    border: 5px solid white;
+  }
+
+  .social-list {
+    display: inline-block;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    width: 25px;
+    margin: 0 auto;
+  }
+
+  .social-list i {
+    color: white;
+  }
+
+  .social-list i:hover {
+    color: white;
+    transition: 0.1s;
+    font-size: 14px;
+  }
+
+  .profile-position {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: .5em;
+  }
+
+  .profile-main {
+    text-align: left;
+    margin-left: 2em;
+    margin-left: 1em; /* Adjust margin for spacing between image and content */
+
+  }
+
+  .profile-name::after {
+    margin-left: 0;
+  }
+
+  @media only screen and (max-width: 769px) {
+    .card-about {
+      box-shadow: 0, 0, 20px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      box-shadow: 2px 5px 10px black;
+      width: 80%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to right, #FF00FF, #0096FF);
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+      padding: 1em;
+    }
   
+    .profile-img {
+      border-radius: 50%;
+      width:125px;
+      border: 3px solid white;
+    }
+  
+    .social-list {
+      display: inline-block;
+      justify-content:space-around;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 50px;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .social-list i {
+      color: white;
+    }
+  
+    .profile-name {
+      font-size: 2rem;
+      margin-left: -25px;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .line {
+      display: block;
+      height: 1px;
+      width: 10em;
+      background-color: white;
+      margin: .5em auto .75em;
+    }
+  
+    .profile-position {
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 18px;
+      margin-left: -25px;
+      margin-bottom: .5em;
+    }
+  
+    .profile-body {
+      font-weight: 300;
+      margin-bottom: 0;
+      text-align: center;
+      margin-left: -25px;
+      font-size: 14px;
+    }
+  
+  }
