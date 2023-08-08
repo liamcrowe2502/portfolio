@@ -8,6 +8,7 @@
 
 h1 {
   text-decoration: none;
+  font-family: 'Poppins';
 }
 
 .left-half {
@@ -19,6 +20,7 @@ h1 {
   left: 0;
   bottom: 0;
   z-index: -1;
+
 }
 
 .how-to-contact-me {
@@ -32,8 +34,9 @@ h1 {
   font-size: 20px; /* Example font size, you can adjust it as needed */
   line-height: 1.5;
   font-weight: 600;
-  font-family: 'Raleway';
-  color: #333; /* Example text color, you can adjust it as needed */
+  font-family: 'Poppins';
+  letter-spacing: 2px;
+  color: white; /* Example text color, you can adjust it as needed */
 }
 
 .right-half {
@@ -45,6 +48,7 @@ h1 {
   right: 0;
   bottom: 0;
   z-index: -1;
+  /*z-index:0; To make the buttons on the map interactable*/
 }
 
 .contact-container {
@@ -148,8 +152,83 @@ button:hover {
   color: #333;
 }
   
+/* Existing CSS */
+
+/* New styles for mobile responsiveness */
 @media (max-width: 768px) {
-  h1 {
-    text-decoration: none;
+  .main-container {
+    background: linear-gradient(to right, #FF00FF, #0096FF);
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center content horizontally on small screens */
+    height: auto; /* Reset height for mobile layout */
   }
+
+  .left-half {
+    width: 100%; /* Occupy full width on small screens */
+    height: 50%; /* Set height for the left section on small screens */
+    position: relative;
+    top: initial;
+    left: initial;
+    bottom: initial;
   }
+
+  .right-half {
+    display: none; /* Hide the right section on small screens */
+  }
+
+  .contact-container {
+    width: 100%; /* Occupy full width on small screens */
+    margin: 0; /* Reset margin */
+    padding: 20px; /* Add padding for better spacing on small screens */
+  }
+
+  .bouncy-container {
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+
+  .bouncy-container .bouncy {
+    font-size: 3rem; /* Adjust font size for mobile layout */
+  }
+
+  .how-to-contact-me {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  
+  /* Additional styles for the paragraph inside .how-to-contact-me */
+  .how-to-contact-me p {
+    font-size: 12px; /* Example font size, you can adjust it as needed */
+    line-height: 1.5;
+    font-weight: 600;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    color: white; /* Example text color, you can adjust it as needed */
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  .row input {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .subjectTextArea, textarea {
+    width: 430px; /* Occupy full width on small screens */
+  }
+
+  button {
+    margin-left: 0; /* Reset margin for mobile layout */
+    margin-top: 20px; /* Add margin for better spacing on small screens */
+  }
+}
