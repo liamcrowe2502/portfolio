@@ -49,9 +49,24 @@ function About() {
     <div class="profile-sidebar">
       <img class="profile-img" src="https://www.scoliosis-rehabilitation.com/mymedia/2016/06/no-face.png" alt="Owner of portfolio website"/>
       <ul>
-        <li class="social-list"><a aria-label="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-        <li class="social-list"><a aria-label="github" href="#"></a><i class="fa-brands fa-github"></i></li>
-        <li class="social-list"><a aria-label="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li className="social-list">
+    <a aria-label="linkedin" href="https://www.linkedin.com/in/liamcrowe2502/">
+      <i className="fab fa-linkedin" aria-hidden="true"></i>
+      <span className="sr-only">LinkedIn</span> {/* Accessible content */}
+    </a>
+  </li>
+  <li className="social-list">
+    <a aria-label="github" href="https://github.com/liamcrowe02/">
+      <i className="fab fa-github" aria-hidden="true"></i>
+      <span className="sr-only">GitHub</span> {/* Accessible content */}
+    </a>
+  </li>
+  <li className="social-list">
+    <a aria-label="instagram" href="https://www.instagram.com/liamcrowe02/">
+      <i className="fab fa-instagram" aria-hidden="true"></i>
+      <span className="sr-only">Instagram</span> {/* Accessible content */}
+    </a>
+  </li>
       </ul>
     </div>
     <div class="profile-main">
