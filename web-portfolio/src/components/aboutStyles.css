@@ -32,7 +32,7 @@
     max-width: 600px;
     display: flex;
     flex-direction: row;
-    background-color: #498afb;
+    background: linear-gradient(to bottom, #FF00FF, #0096FF);
     color: white;
     margin: 0 auto;
     text-align: center;
